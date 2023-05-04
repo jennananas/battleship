@@ -47,6 +47,9 @@ export default function Gameboard(){
         },
         finishGame: function(){
             return this.ships.every(ship => ship.isSunk())
+        },
+        getOpponentBoard: function(){
+            return this.board
         }
     
     
